@@ -1,0 +1,305 @@
+@media (max-width: 1920px) {
+    .container {
+        width: 1705px;
+    }
+}
+@media (max-width: 1710px) {
+    .container {
+        width: 1190px;
+    }
+    .events {
+        &__wrapper {
+            display: block;
+                width: 1000px;
+            .accordion {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                align-items: center;
+                padding-left: 40px;
+                gap: 32px;
+                padding-bottom: 0;
+                height: 85px;
+                width: 1000px;
+                margin-bottom: 2px;
+                &__header {
+                    font-size: 24px;
+                    height: 53px;
+                    width: auto;
+                    transform: initial;
+                }
+                &__number {
+                    font-size: 32px;
+                }
+            }
+            .content {
+                transition: 0.3s ease-in-out;
+                max-height: 0;
+                max-width: 768px;
+                overflow: hidden;
+                &__img {
+                    height: 682px;
+                    width: 1000px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                &__descr {
+                    width: 100%;
+                    height: 192px;
+                    bottom: 0;
+                    top: auto;
+                    padding: 25px 346px 40px 40px;
+                }
+                &__number {
+                    font-size: 152px;
+                    left: auto;
+                    right: -30px;
+                    top: -10px;
+                }
+                &__header {
+                    font-size: 18px;
+                }
+                &__data {
+                    margin-top: 8px;
+                    font-size: 16px;
+                }
+                &__btn {        
+                    width: 169px;
+                    height: 44px;
+                    font-size: 16px;
+                    padding: 12px 13px;}
+            }
+            .active {
+                max-height: 460px;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 750px;
+    }
+  .bolt {
+    width: 28%;
+  }
+  .construction  {
+    padding: 100px 0 169px;
+    .header {
+        margin-top: 166px;
+        font-size: 36px;
+    }
+    .subheader {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 150%;
+        width: 300px;
+        &_sec{
+            margin-top: 40px;
+        }
+    }
+    .timer {
+        width: 358px;
+        span, .points {
+            font-size: 36px;
+        }
+        &__item {
+            &_descr {
+                margin-top: 10px;
+                img{
+                    width: 64px;
+                    height: 40px;
+                }
+                .descr {
+                    font-size: 12px;
+                    &_text1 {
+                        display: none;
+                    }
+                    &_text2{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    }
+    .btn {
+        margin-top: 15px;
+    }
+    .footer {
+        height: 160px;
+        .form {
+            margin: 40px auto 0;
+            padding: 10px 4px 10px 20px;
+            width: 360px;
+            height: 41px;
+            input {
+                font-size: 14px;
+            }
+            button {
+                width: 33px;
+                height: 33px;
+            }
+        }
+        &__other {
+            position: initial;
+            transform: initial;
+            margin: 15px auto 0;
+            &_text {
+                font-size: 16px;
+                &:after {
+                    left: 308px;
+                    width: 100px;
+                }
+            }
+            img {
+                margin-top: 0;
+            }
+        }
+        &__wrapper{
+            margin-top: 0;
+        }
+    }
+    .events {
+        padding-top: 46px;
+        &__wrapper {
+            width: 688px;
+            .accordion {
+                width: 688px;
+            }
+            .content {
+                &__img {
+                    width: 688px;
+                }
+            }
+        }
+        .header {
+            font-size: 36px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        width: 570px;
+    }
+    .events {
+        &__wrapper {
+            width: 570px;
+        }
+        .accordion {
+            width: 570px;
+        }
+        .content {
+            &__img {
+                height: 465px;
+                width: 570px;
+                img {
+                    height: auto;
+                }
+            }
+        }
+    }
+    .footer {
+        &__other {
+            &_text {
+                &:after {
+                    left: 218px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 320px;
+    }
+    .bolt {
+        width: 45%;
+      }
+      .construction  {
+        padding: 80px 0 86px;
+        .logo {
+            img {
+                width: 128px;
+                height: 40px;
+            }
+        }
+        .header {
+            margin-top: 66px;
+        }
+        .subheader {
+            margin-top: 16px;
+            &_sec{
+                margin-top: 40px;
+            }
+        }
+        .timer {
+            width: 296px;
+            &__item {
+                &_descr {
+                    margin-top: 6px;
+                }
+            }
+        }
+        }
+        .footer {
+            height: 141px;
+            .form {
+                margin: 40px auto 0;
+                width: 280px;
+                height: 41px;
+            }
+            &__other {
+                &_text {
+                    &:after {
+                        left: 93px;
+                    }
+                }
+            }
+        }
+    .modal {
+        &__content {
+            margin-top: 221px;
+        }
+    }
+    .events {
+        &__wrapper {
+            width: 320px;
+        }
+        .accordion {
+            padding-left: 20px;
+            gap: 16px;
+            width: 320px;
+            height: 64px;
+            &__number {          
+                font-size: 24px;
+            }
+            &__header {
+                font-size: 16px;
+                height: 39px;
+            }
+        }
+        .content {
+            &__img {
+                height: 315px;
+                width: 320px;
+                img {
+                    height: auto;
+                }
+            }
+            &__descr {
+                height: 158px;
+                width: auto;
+                padding: 24px 131px 20px 20px;
+            }
+            &__header {
+                width: 165px;
+                white-space: nowrap;
+                font-size: 17px;
+            }
+        }
+    }
+}

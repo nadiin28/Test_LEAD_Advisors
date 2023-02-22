@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'SF 500';
+    src: url(../fonts/SF-Pro-Display-Medium.otf);
+}
+
+@font-face {
+    font-family: 'SF 400';
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+    font-family: 'SF 600';
+    src: url(../fonts/SF-Pro-Display-Semibold.otf);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+.container {
+    width: 1705px;
+    margin: 0 auto;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.bolt {
+    position: absolute;
+    &-right {
+        right: 0;
+    }
+} 
+
+/* @import 'general.scss'; */
+@import "block/concrtuction";
+@import "block/footer";
+@import "block/modal";
+@import "block/title";
+@import "block/event";
+@import "block/animate";
+
+@import "block/media"
+
+
+
+
+
+

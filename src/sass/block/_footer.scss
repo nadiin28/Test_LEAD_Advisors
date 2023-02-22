@@ -1,0 +1,104 @@
+.footer {
+    position: relative;
+    flex: 1 0 auto;
+    height: 192px;
+    background: #162C4E;
+    &__wrapper {
+        text-align: center;
+        position: relative;
+        margin-top: 61px;
+    }
+    &__other {
+        position: absolute;
+        display: flex;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 0;
+        background-color: transparent;
+        border: none;
+        &:focus {
+            border: none;
+            outline: none;
+        }
+        &_text {
+            margin-right: 10px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #FFFFFF;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 127px;
+                height: 0.1em;
+                background-color: rgb(255, 255, 255);
+                opacity: 0;
+                transition: opacity 300ms, transform 300ms;
+              }
+              &:after {
+                opacity: 1;
+                transform: scale(0);
+                transform-origin: center;
+              }
+              &:hover::after,
+              &:focus::after{
+                transform: scale(1);
+              }
+        }
+        img {
+            margin-top: 3px;
+        }
+        &:hover img {
+            transition: 300ms;
+            transform: rotate(180deg);
+        }
+    }
+    .form{
+        padding: 16px 8px 16px 27px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 440px;
+        height: 59px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+        border-radius: 40px;
+        &__wrapper {
+            display: inline-block;
+        }
+        input {
+            width: 85%;
+            outline: none;
+            border: none;
+            background: transparent;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        button {
+            position: relative;
+            width: 43px;
+            height: 43px;
+            border-radius: 100%;
+            background: #DF2224;
+            border: none;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+    }
+    &__message {
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
